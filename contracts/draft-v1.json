@@ -1,0 +1,37 @@
+{
+  "contract": "idea-talks/draft-v1",
+  "input": {
+    "required": [
+      "idea",
+      "audience",
+      "authorized_sources",
+      "output_path"
+    ],
+    "optional": [
+      "speaker_words",
+      "privacy_audience",
+      "maximum_duration"
+    ]
+  },
+  "output": {
+    "files": [
+      "talk.html",
+      "story-evidence.md"
+    ],
+    "claim_status": [
+      "observed",
+      "reported",
+      "interpreted",
+      "proposed",
+      "unknown"
+    ],
+    "side_effects": "Local drafts only; no publication or automatic dependency installation."
+  },
+  "stop_conditions": [
+    "Cancellation",
+    "Output path already exists without overwrite authorization",
+    "Evidence cannot support a material factual claim",
+    "Unsupported renderer/browser feature"
+  ],
+  "failure": "Report narrow gap without substituting invented results."
+}

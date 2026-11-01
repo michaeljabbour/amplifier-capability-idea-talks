@@ -1,0 +1,74 @@
+{
+  "contract_version": "amplifier-capability/v1",
+  "id": "idea-talks",
+  "display_name": "Idea Talks",
+  "name": "amplifier-capability-idea-talks",
+  "legacy_names": [
+    "engage-idea-talks"
+  ],
+  "version": "0.1.0",
+  "kind": "skill",
+  "engine": "LLM",
+  "engine_components": {
+    "caller_method": "LLM",
+    "browser_controls": "New deterministic standalone HTML editor/exporter; no model, server or publishing service."
+  },
+  "promise": "Turn authorized evidence into one idea, one concrete example and one invitation in a self-contained HTML talk.",
+  "surfaces": [
+    "agent-skills"
+  ],
+  "portable_method": {
+    "name": "idea-talks",
+    "path": "skills/idea-talks",
+    "include": [
+      "."
+    ],
+    "contract": "Read and apply in the caller's existing context; no independent model or publishing loop."
+  },
+  "interfaces": {
+    "portable": {
+      "input": "Idea, audience, chosen speaker words, authorized source pack, intended privacy/audience, explicit output location.",
+      "output": "Self-contained HTML talk and adjacent story-evidence.md; unresolved claims remain visible.",
+      "failure": "If evidence cannot support the idea, return an honest question or proposed example instead of inventing results; leave unsupported public claims out."
+    }
+  },
+  "permissions": {
+    "installation": {
+      "network": false,
+      "executes_capability_code": false,
+      "grants_runtime_permissions": false,
+      "scope": "Shared canonical portable installer only; destination preview and explicit apply."
+    },
+    "runtime": {
+      "reads": "Only caller-authorized relevant evidence.",
+      "writes": "Explicitly selected local draft outputs; browser draft when editing.",
+      "outbound": "None provided by the package. Source-credit links navigate only on user action. Publishing/model transfers require the caller's independent authorization."
+    },
+    "secret_names": {
+      "required": []
+    }
+  },
+  "dataflow": {
+    "method": "Caller supplies authorized evidence to its already selected host/model; this skill provisions no provider or credentials.",
+    "template": "Inline HTML/CSS/JavaScript, system font fallbacks, no runtime fetch. Browser edits may use localStorage. Download includes slide notes and source details; inspect before sharing.",
+    "publication": "Not implemented; draft completion does not publish or approve sharing."
+  },
+  "source_policy": {
+    "revision": "Use an explicit full Git commit with the existing shared canonical installer; no latest inference.",
+    "research": ".research/market remains local and ignored; AGENTS.md governs refresh.",
+    "rights": "MIT for the distributed method, code and included generic assets; supplied source material retains its own rights and privacy limits.",
+    "legacy": "The legacy installed skill is not replaced automatically. This release uses newly authored method and HTML/CSS/JavaScript, with no inherited template/art/font assets."
+  },
+  "dependencies": {
+    "method": [],
+    "optional_tests": [
+      "Existing Playwright and compatible Chromium, explicitly selected by test operator; no implicit installation."
+    ]
+  },
+  "guide_url": "https://michaeljabbour.github.io/capabilities/idea-talks/",
+  "install_url": "https://michaeljabbour.github.io/capabilities/idea-talks/#setup",
+  "guide_publication_status": "Coordinated main-site guide; repository owner controls publication.",
+  "version_basis": "Initial MIT package; scoped verification does not imply writing quality or independent human usefulness.",
+  "repository_url": "https://github.com/michaeljabbour/amplifier-capability-idea-talks",
+  "publication_status": "Publication is a separate owner operation; this capability only prepares local drafts."
+}

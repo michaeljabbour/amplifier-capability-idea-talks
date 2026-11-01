@@ -1,0 +1,189 @@
+{
+  "schema": "idea-talks-software-verification/v1",
+  "implementation": "newly authored offline HTML/CSS/JavaScript editor",
+  "template_sha256": "2c3de7e8e54077b572d5832f1fac8217d05477c0b57ab57d97679fa2d2230eef",
+  "fixture_sha256": "714fb18421f0d936881fad162b3f7a8596a5f2d82419235e1c71487b3afc08e0",
+  "test_script_sha256": "3cc3c3d05ab22fbb226ae748cbad77c702b36f5304384edd11d6d66ade95671b",
+  "passed": true,
+  "passed_checks": 42,
+  "total_checks": 42,
+  "external_request_count": 0,
+  "page_error_count": 0,
+  "checks": [
+    {
+      "name": "nine source slides and one active",
+      "passed": true
+    },
+    {
+      "name": "accessible controls have explicit labels",
+      "passed": true
+    },
+    {
+      "name": "keyboard next",
+      "passed": true
+    },
+    {
+      "name": "overview dialog contains all nine choices",
+      "passed": true
+    },
+    {
+      "name": "overview escape returns focus",
+      "passed": true
+    },
+    {
+      "name": "typing does not navigate",
+      "passed": true
+    },
+    {
+      "name": "notes typing does not navigate",
+      "passed": true
+    },
+    {
+      "name": "unsafe source URL rejected: javascript",
+      "passed": true
+    },
+    {
+      "name": "unsafe source URL rejected: data",
+      "passed": true
+    },
+    {
+      "name": "unsafe source URL rejected: file",
+      "passed": true
+    },
+    {
+      "name": "unsafe source URL rejected: //example.com",
+      "passed": true
+    },
+    {
+      "name": "unsafe source URL rejected: https",
+      "passed": true
+    },
+    {
+      "name": "unsafe source URL rejected: https",
+      "passed": true
+    },
+    {
+      "name": "safe source URL retained without automatic request",
+      "passed": true
+    },
+    {
+      "name": "invalid navigation index refused: NaN",
+      "passed": true
+    },
+    {
+      "name": "invalid navigation index refused: Infinity",
+      "passed": true
+    },
+    {
+      "name": "invalid navigation index refused: -1",
+      "passed": true
+    },
+    {
+      "name": "invalid navigation index refused: 9",
+      "passed": true
+    },
+    {
+      "name": "invalid navigation index refused: 1.5",
+      "passed": true
+    },
+    {
+      "name": "invalid navigation index refused: \"1\"",
+      "passed": true
+    },
+    {
+      "name": "stored source URL with leading control refused",
+      "passed": true
+    },
+    {
+      "name": "empty audience blocks export",
+      "passed": true
+    },
+    {
+      "name": "empty heading blocks export",
+      "passed": true
+    },
+    {
+      "name": "oversized author text preserved and invalid draft not saved",
+      "passed": true
+    },
+    {
+      "name": "oversized export is blocked",
+      "passed": true
+    },
+    {
+      "name": "HTML-like input stays text",
+      "passed": true
+    },
+    {
+      "name": "export includes notes and exact source text",
+      "passed": true
+    },
+    {
+      "name": "export retains template code license and separate content rights",
+      "passed": true
+    },
+    {
+      "name": "export escapes authored markup",
+      "passed": true
+    },
+    {
+      "name": "export reopens independently",
+      "passed": true
+    },
+    {
+      "name": "export fresh identity and edit reset",
+      "passed": true
+    },
+    {
+      "name": "export cannot execute edited markup",
+      "passed": true
+    },
+    {
+      "name": "original local draft restores",
+      "passed": true
+    },
+    {
+      "name": "different talk has independent browser draft",
+      "passed": true
+    },
+    {
+      "name": "no horizontal overflow at 1440",
+      "passed": true
+    },
+    {
+      "name": "no horizontal overflow at 390",
+      "passed": true
+    },
+    {
+      "name": "no horizontal overflow at 360",
+      "passed": true
+    },
+    {
+      "name": "print shows nine slides and notes",
+      "passed": true
+    },
+    {
+      "name": "no-JavaScript shows nine readable slides and source notes",
+      "passed": true
+    },
+    {
+      "name": "no-JavaScript no horizontal overflow",
+      "passed": true
+    },
+    {
+      "name": "no external document requests",
+      "passed": true
+    },
+    {
+      "name": "no page JavaScript errors",
+      "passed": true
+    }
+  ],
+  "scope": "Artifact-bound software checks only; final commit-bound receipt is retained separately. No writing-quality, comprehension or independent human-usefulness result.",
+  "unsupported": [
+    "fullscreen",
+    "import",
+    "autonomous authoring",
+    "publication"
+  ]
+}

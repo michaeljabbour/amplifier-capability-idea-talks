@@ -1,0 +1,11 @@
+{
+  "name": "amplifier-capability-idea-talks",
+  "version": "0.1.0",
+  "kind": "skill",
+  "engine": "LLM",
+  "surfaces": [
+    "agent-skills"
+  ],
+  "secret_names": [],
+  "status": "private-local-review"
+}
